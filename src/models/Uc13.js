@@ -3,6 +3,7 @@ const { Model, DataTypes } = require('sequelize');
 class Uc13 extends Model {
     static init(sequelize) {
         super.init({   
+            nomeEquipamento:DataTypes.STRING,
             motorista:DataTypes.STRING,
             data:DataTypes.STRING,
             horaInicial:DataTypes.STRING,

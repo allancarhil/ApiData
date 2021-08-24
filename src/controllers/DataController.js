@@ -27,7 +27,7 @@ module.exports = {
             const ut37 = await database.query("select * from ut37 where data = " + data, { type: QueryTypes.SELECT });
 
 
-            const datas = {
+            const datas = [
                 //rebritagem,
                 ub02,
                 uc06,
@@ -43,7 +43,7 @@ module.exports = {
                 mn01,
                 us36,
                 ut37
-            };
+            ];
 
             return res.json(datas);
         } catch (error) {

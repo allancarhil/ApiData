@@ -32,6 +32,7 @@ module.exports = {
 
     async store(req,res){
         const { 
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
@@ -162,6 +163,7 @@ module.exports = {
    
 
         const uc14 = await Uc14.create({
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,

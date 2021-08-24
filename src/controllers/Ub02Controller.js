@@ -35,6 +35,7 @@ module.exports = {
      
 
         const { 
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
@@ -84,6 +85,7 @@ module.exports = {
       
 
         const ub02 = await Ub02.create({
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,

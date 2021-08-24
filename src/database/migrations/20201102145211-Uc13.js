@@ -9,6 +9,10 @@ module.exports = {
         autoIncrement: true,
         allowNull: false,
       },
+      nome_equipamento: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       motorista: {
         type: Sequelize.TEXT,
         allowNull: true,

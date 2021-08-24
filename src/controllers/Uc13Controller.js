@@ -35,6 +35,7 @@ module.exports = {
      
 
         const { 
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
@@ -80,6 +81,7 @@ module.exports = {
 
        
         const uc13 = await Uc13.create({
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,

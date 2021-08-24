@@ -32,6 +32,7 @@ module.exports = {
 
     async store(req, res) {
         const {
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
@@ -199,6 +200,7 @@ module.exports = {
 
 
         const up0506 = await Up0506.create({
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,

@@ -41,6 +41,7 @@ module.exports = {
 
 
         const {
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
@@ -56,6 +57,7 @@ module.exports = {
 
 
         const us36 = await Us36.create({
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,

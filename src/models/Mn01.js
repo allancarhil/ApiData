@@ -3,6 +3,8 @@ const { Model, DataTypes } = require('sequelize');
 class Mn01 extends Model {
     static init(sequelize) {
         super.init({
+
+            nomeEquipamento:DataTypes.STRING,
             motorista:DataTypes.STRING,
             data:DataTypes.STRING,
             horaInicial:DataTypes.STRING,

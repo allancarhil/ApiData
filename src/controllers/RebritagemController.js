@@ -32,6 +32,7 @@ module.exports = {
 
     async store(req, res) {
         const {
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
@@ -264,6 +265,7 @@ module.exports = {
 
 
         const rebritagem = await Rebritagem.create({
+            nomeEquipamento,
             motorista,
             data,
             horaInicial,
