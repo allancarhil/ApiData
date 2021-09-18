@@ -21,6 +21,8 @@ const Ut07Controller = require('./controllers/Ut07Controller');
 const Ut08Controller = require('./controllers/Ut08Controller');
 const Ut37Controller = require('./controllers/Ut37Controller');
 
+const ResumoController = require('./controllers/ResumoController');
+
 const routes = express.Router();
 
 routes.get('/data/:data', DataController.showData);
@@ -119,5 +121,7 @@ routes.get('/usina/data/:data', UsinaController.showData);
 routes.post('/usina', UsinaController.store);
 
 
-routes.get("/dataEquipamento/", DataController.showData);
+routes.get("/dataEquipamento/:data", DataController.showData);
+
+routes.get("/resumo/:data", ResumoController.showResumo);
 module.exports = routes;

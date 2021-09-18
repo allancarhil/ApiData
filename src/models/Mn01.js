@@ -12,8 +12,6 @@ class Mn01 extends Model {
             horimetroInicial:DataTypes.STRING,
             horimetroFinal:DataTypes.STRING,
             banco:DataTypes.STRING,
-            paradaFinal6:DataTypes.STRING,
-            descricao6:DataTypes.STRING,
             paradaInicial1:DataTypes.STRING,
             paradaFinal1:DataTypes.STRING,
             descricao1:DataTypes.STRING,

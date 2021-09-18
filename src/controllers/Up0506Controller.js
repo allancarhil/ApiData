@@ -1,5 +1,4 @@
 const Up0506 = require('../models/Up0506');
-const Funcionario = require('../models/Funcionario');
 module.exports = {
 
     async index(req, res) {
